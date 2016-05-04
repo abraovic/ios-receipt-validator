@@ -1,0 +1,10 @@
+vendor/
+.DS_Store
+
+### PhpStorm ###
+.idea/
+*.ipr
+*.iml
+*.iws
+out/
+.idea_modules/

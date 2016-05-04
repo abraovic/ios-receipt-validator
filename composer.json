@@ -1,0 +1,27 @@
+{
+  "name": "abraovic/ios-receipt-validator",
+  "type": "library",
+  "description": "Validate iOS receipt by PHP",
+  "homepage": "https://github.com/abraovic/ios-receipt-validator",
+  "license": "Apache-2.0",
+  "keywords": ["receipt", "ios", "apple"],
+  "authors": [
+    {
+      "name": "Ante Braovic",
+      "email": "abraovic@gmail.com",
+      "homepage": "http://antebraovic.me"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/abraovic/ios-receipt-validator/issues",
+    "source": "https://github.com/abraovic/ios-receipt-validator"
+  },
+  "require": {
+    "php": ">=5.3",
+    "lib-curl": "*",
+    "symfony/yaml": ">=2.8"
+  },
+  "autoload": {
+    "psr-4": {"abraovic\\iOSReceiptValidator\\": "src/"}
+  }
+}

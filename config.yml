@@ -1,0 +1,4 @@
+ios:
+    url:
+        production: https://buy.itunes.apple.com/verifyReceipt
+        development: https://sandbox.itunes.apple.com/verifyReceipt
