@@ -27,7 +27,7 @@ class Receipt
      */
     private $originalApplicationVersion;
     private $creationDate;
-    private $expirationDate;
+    private $originalPurchaseDate;
 
     /**
      * @param \stdClass $receipt
@@ -38,8 +38,8 @@ class Receipt
         $this->applicationVersion = $receipt->application_version;
         $this->inApp = $receipt->in_app;
         $this->originalApplicationVersion = $receipt->original_application_version;
-        $this->creationDate = $receipt->creation_date;
-        $this->expirationDate = $receipt->expiration_date;
+        $this->creationDate = floor($receipt->receipt_creation_date_ms / 1000);
+        $this->originalPurchaseDate = floor($receipt->original_purchase_date_ms / 1000);
     }
 
     /**
@@ -85,8 +85,8 @@ class Receipt
     /**
      * @return mixed
      */
-    public function getExpirationDate()
+    public function getOriginalPurchaseDate()
     {
-        return $this->expirationDate;
+        return $this->originalPurchaseDate;
     }
 }

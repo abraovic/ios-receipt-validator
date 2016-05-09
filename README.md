@@ -50,7 +50,7 @@ $receipt->getApplicationVersion();
 $receipt->getInApp();
 $receipt->getOriginalApplicationVersion();
 $receipt->getCreationDate();
-$receipt->getExpirationDate();
+$receipt->getOriginalPurchaseDate();
 ```
 
 ## Contributing
