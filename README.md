@@ -5,7 +5,7 @@
 The preferred method of installation is via [Packagist][] and [Composer][]. Run the following command to install the package and add it as a requirement to your project's `composer.json`:
 
 ```bash
-composer require abraovic/ios-receipt-validator  // NOT AVAILABLE - STILL IN DEVELOPMENT
+composer require abraovic/ios-receipt-validator
 ```
 
 ## Examples
