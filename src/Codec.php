@@ -54,7 +54,8 @@ class Codec
 
     function __construct($receipt, $sharedSecret = null)
     {
-        $this->encodedReceipt = $this->isJson($receipt) ? $receipt : base64_encode($receipt);
+        $this->encodedReceipt =
+            $this->isJson($receipt) ? $receipt : Validate::$receiptEncoded ? $receipt : base64_encode($receipt);
         $this->password = $sharedSecret;
     }
 

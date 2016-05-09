@@ -32,6 +32,8 @@ class Validate
      * @var bool
      */
     public static $dev = false;
+    
+    public static $receiptEncoded = false;
 
     function __construct($receipt, $sharedSecret = null)
     {
